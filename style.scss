@@ -1,0 +1,108 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400&display=swap");
+
+.wrapper {
+    font-family: "Noto Sans", sans-serif;
+    padding: 0 15%;
+}
+.menu {
+    width: 70%;
+    padding: 30px 0;
+    align-items: center;
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.95);
+    top: 0;
+    position: fixed;
+    min-height: 36px;
+}
+.menu__list {
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 3%;
+}
+.menu__item {
+}
+.menu__link {
+    &:hover {
+        color: #828282;
+    }
+}
+main {
+    padding: 5% 0;
+}
+.category {
+}
+
+.category__title {
+    margin: 10px 0 42px;
+    margin-top: 23px;
+    margin-bottom: 17px;
+    font-size: 22px;
+    font-weight: 400;
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 3.2px;
+    color: #59585d;
+    line-height: 1.2;
+}
+.category__card {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 6%;
+    padding-bottom: 4%;
+}
+.product-card {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    padding: 2% 0;
+    height: 100%;
+    gap: 2%;
+    padding-bottom: 4%;
+}
+.product-card__image {
+    padding-bottom: 3%;
+}
+.product-card__title {
+    font-size: 14px;
+    line-height: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding-bottom: 3% 0;
+}
+.product-card__date {
+    padding-bottom: 3%;
+    font-size: 11px;
+    letter-spacing: 3.2px !important;
+    color: #828282;
+    text-transform: uppercase;
+    line-height: 13px;
+}
+.product-card_block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.product-card__price {
+    font-size: 14px;
+    letter-spacing: 3.2px !important;
+    color: #828282;
+}
+.product-card__button {
+    margin: 3% 0;
+    background: #c6a28f;
+    letter-spacing: 3px;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    padding: 5% 10%;
+    &:hover {
+        opacity: 0.8;
+    }
+}
