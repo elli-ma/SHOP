@@ -15,6 +15,7 @@
 
     <div class="wrapper">
 
+
         <nav class="menu">
             <ul class="menu__list">
                 <li class="menu__item"><a href="#category1" class="menu__link">Small size</a></li>
@@ -446,6 +447,40 @@
 
         </main>
 
+
+
+        <div class="block__form" id="buyForm">
+            <form class="form">
+                <h3 class="form__title">Параметры товара</h3>
+                <div class="form__field">
+                    <label for="quantity" class="form__label">Количество:</label>
+                    <input type="number" id="quantity" class="form__input" min="1" required>
+                </div>
+
+                <div class="form__field">
+                    <label class="form__label">Цвет:</label>
+                    <label>
+                        <input type="radio" name="color" class="form__radio" value="red" required> Красный
+                    </label>
+                    <label>
+                        <input type="radio" name="color" class="form__radio" value="blue"> Синий
+                    </label>
+                    <label>
+                        <input type="radio" name="color" class="form__radio" value="green"> Зеленый
+                    </label>
+                </div>
+
+                <div class="form__field">
+                    <label for="comment" class="form__label">Комментарий:</label>
+                    <textarea id="comment" class="form__input" maxlength="2000"></textarea>
+                </div>
+
+                <div class="form__field">
+                    <button type="button" id="submitBtn" class="form__button">Купить</button>
+                    <button type="button" id="closeBtn" class="form__button">Закрыть</button>
+                </div>
+            </form>
+        </div>
     </div>
 
     <script src="script.js"></script>
