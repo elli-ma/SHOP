@@ -2,6 +2,7 @@
 .wrapper {
   font-family: "Noto Sans", sans-serif;
   padding: 0 20%;
+  background-color: "white";
 }
 
 .menu {
@@ -15,6 +16,14 @@
   min-height: 36px;
 }
 
+.theme-toggle {
+  align-self: end;
+  width: 15px;
+  height: 15px;
+  background-color: #828282;
+  border-radius: 50%;
+}
+
 .menu__list {
   width: 100%;
   font-size: 12px;
@@ -26,8 +35,11 @@
   gap: 3%;
 }
 
+.menu__link {
+  color: black;
+}
 .menu__link:hover {
-  color: #828282;
+  color: #848484;
 }
 
 main {
@@ -43,7 +55,7 @@ main {
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 3.2px;
-  color: #59585d;
+  color: #aaa9a7;
   line-height: 1.2;
 }
 
@@ -109,6 +121,7 @@ main {
   text-align: center;
   padding: 5% 10%;
 }
+
 .product-card__button:hover {
   opacity: 0.8;
 }
@@ -144,25 +157,26 @@ main {
   letter-spacing: 3px;
   text-align: left;
 }
+
 .form__title {
   font-size: 14px;
   line-height: 16px;
   text-transform: uppercase;
   color: black;
-
   padding-bottom: 3%;
 }
+
 .form__field {
   display: flex;
   justify-content: space-between;
   padding-top: 5%;
 }
-.form__label {
-}
+
 .form__input {
   border: 1px solid #c1c1c1;
   width: 62%;
 }
+
 .form__radio {
   appearance: none;
   -webkit-appearance: none;
@@ -174,10 +188,10 @@ main {
   outline: none;
   transition: border-color 0.2s;
   background-color: white;
-  &:checked {
-    border-color: rgb(255, 255, 255);
-    background-color: gray;
-  }
+}
+.form__radio:checked {
+  border-color: rgb(255, 255, 255);
+  background-color: gray;
 }
 
 .form__button {
@@ -192,24 +206,25 @@ main {
   padding: 3% 8%;
   margin: 4%;
 }
+
 .form__button:hover {
   opacity: 0.8;
 }
 
 /*# sourceMappingURL=style.css.map */
-
 @media (max-width: 900px) {
   .wrapper {
     padding: 0% 5%;
   }
+
   .menu {
     width: 90%;
   }
+
   .product-card {
     width: 49%;
   }
 }
-
 @media (max-width: 560px) {
   .wrapper {
     padding: 0% 5%;
@@ -218,9 +233,11 @@ main {
   main {
     padding: 110px 0;
   }
+
   .menu {
     padding: 20px;
   }
+
   .menu__list {
     flex-direction: column;
     justify-content: center;
@@ -229,24 +246,32 @@ main {
     gap: 2%;
     line-height: 22px;
   }
+
   .product-card {
     width: 100%;
     padding: 10% 0;
   }
+
   .category__title {
     font-size: 17px;
   }
+
   .product-card__title {
     font-size: 13px;
   }
+
   .product-card__date {
     font-size: 11px;
   }
+
   .product-card__price {
     font-size: 11px;
   }
+
   .product-card__button {
     font-size: 11px;
     padding: 3% 6%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
