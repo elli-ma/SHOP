@@ -246,7 +246,7 @@ main {
     white-space: nowrap;
 }
 .footer__link {
-    color:#aaa9a7;
+    color: #aaa9a7;
     &:hover {
         color: #848484;
     }
@@ -268,16 +268,11 @@ main {
     .wrapper {
         padding: 0% 5%;
     }
-
-    main {
-        padding: 110px 0;
-    }
     .menu {
-        padding: 20px;
+        padding: 25px 0;
     }
     .menu__list {
-        flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         text-align: center;
         font-size: 11px;
         gap: 2%;
@@ -285,7 +280,7 @@ main {
     }
     .product-card {
         width: 100%;
-        padding: 10% 0;
+        padding: 3% 0;
     }
     .category__title {
         font-size: 17px;
