@@ -7,7 +7,7 @@ Date.prototype.getWeek = function () {
 };
 
 
-// Переключения темы
+
 const themeToggle = document.getElementById("themeToggle");
 const wrapper = document.getElementById("wrapper");
 const menu = document.getElementById("menu");
@@ -37,7 +37,7 @@ themeToggle.addEventListener("click", function () {
   }
 });
 
-// Формат даты
+
 function getDayInfo(dateString) {
   const dateParts = dateString.split('.');
   const day = parseInt(dateParts[0], 10);
@@ -58,7 +58,7 @@ function getDayInfo(dateString) {
   return [a, `, ${week} неделя`, b].join("")
 }
 
-// Вывод категорий и продуктов
+
 function productRender() {
   let e = document.getElementById("categories")
   let categories = DATA
@@ -91,7 +91,7 @@ function productRender() {
 productRender()
 
 
-// Кнопка вверх
+
 const btnUp = {
   el: document.querySelector('.btn-up'),
   show() {
@@ -116,7 +116,7 @@ const btnUp = {
 }
 btnUp.addEventListener();
 
-// Кнопка "Купить"
+
 const buyButtons = document.querySelectorAll(".product-card__button");
 const buyForm = document.getElementById("buyForm");
 const submitButton = document.getElementById("submitBtn");
