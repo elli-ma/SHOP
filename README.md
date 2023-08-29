@@ -1,3 +1,3 @@
-# DDmarket
+# SHOP
 
-https://elli-ma.github.io/DDmarket/
+https://elli-ma.github.io/SHOP/
